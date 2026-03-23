@@ -8,9 +8,9 @@ preview: "Kaoto 2.10 has been released"
 ---
 
 ![Kaoto](cover.png)
-## What's New in Kaoto 2.8?
+## What's New in Kaoto 2.10?
 
-We are excited to announce the release of **Kaoto 2.10**, a major step forward for visual integration design in Apache Camel. This release introduces REST DSL support with OpenAPI integration, significantly enhanced DataMapper capabilities for complex schema handling, and numerous canvas improvements that make building integrations more intuitive.
+**Kaoto 2.10** represents a major leap forward in visual integration design, now powered by Apache Camel 4.18.0. This release bridges the gap between API-first design and integration development with full REST DSL and OpenAPI support, while significantly expanding DataMapper capabilities to handle complex multi-file schemas. Combined with production-ready drag-and-drop functionality, building sophisticated integrations has never been more intuitive.
 
 
 ## Here are the key highlights of this release:
@@ -25,7 +25,7 @@ Kaoto 2.10 introduces comprehensive REST DSL support, enabling you to design and
 
 - **Visual REST Configuration** - Configure REST endpoints, operations, and bindings through Kaoto's intuitive tree-based interface. Define REST methods with parameters, security requirements, response messages, and content types while linking operations to Camel routes.
 
-[image rest-dsl-editor ]
+![Rest DSL Editor](rest-dsl-editor.png)
 
 - **Settings Integration** - Manage REST DSL configuration through the Settings panel, including component selection (OpenAPI/Swagger), binding modes, API documentation generation, host configuration, and CORS settings.
 
@@ -50,6 +50,8 @@ The DataMapper has received substantial enhancements for handling complex data t
 
 
 **Multiple Schema Files**
+
+Real-world data transformations often involve complex schemas split across multiple files. Kaoto 2.10 now handles these scenarios seamlessly:
 
 - **XML Schema Imports** - Full support for `xs:import` and `xs:include`
 
@@ -83,16 +85,17 @@ The DataMapper interface has been refined for better usability:
 
  - “Opt” icon for optional field
 
-[dm-04-01-icon-opt.png]
+![Opt icon for optional field](dm-04-01-icon-opt.png)
+
 
  - “0+” icon for optional collection field
 
-[dm-04-02-icon-opt-collection.png]
+![0+ icon for optional collection field](dm-04-02-icon-opt-collection.png)
+
 
  - “1+” icon for required collection field
 
-[dm-04-03-icon-req-collection.png]
-
+![1+ icon for required collection field](dm-04-03-icon-req-collection.png)
 
 
 - **Zoom Controls** - Font size refinements and zoom controls for large schemas
@@ -101,10 +104,9 @@ The DataMapper interface has been refined for better usability:
 
 - **Disable DataMapper Step** - Option to temporarily disable DataMapper transformations
 
-[dm-06-01-disable-button.png]
+![Disable DataMapper Step image 1](dm-06-01-disable-button.png)
 
-[dm-06-02-disabled.png]
-
+![Disable DataMapper Step image 2](dm-06-03-disabled.png)
 
 
 
@@ -121,7 +123,7 @@ Building integrations is now more intuitive with these canvas improvements:
 
 **Drag and Drop**
 
-Drag and drop is now a fully stable feature, ready for production use with comprehensive support for complex integration patterns.
+After extensive testing and refinement, drag and drop has graduated from experimental to **production-ready status**. This powerful feature is now enabled by default and fully supports complex integration patterns, making route construction faster and more intuitive than ever.
 
 - **Edge Drop Support** - Drop components directly onto connection edges to insert them between nodes
 
@@ -151,7 +153,9 @@ Drag and drop is now a fully stable feature, ready for production use with compr
 
 - **Canvas Layout Direction** - Choose between horizontal and vertical layout orientations to match your workflow preferences
 
-[layout01 and layout02]
+![Vertical layout](layout01.png)
+
+![Horizontal layout](Layout02.png)
 
 - **Undo/Redo Improvements** - Nodes properly re-render after undo and redo operations, ensuring visual consistency
 
@@ -169,7 +173,7 @@ Configuration forms have been enhanced for better usability:
 
 - **Show/Hide URI** - Toggle URI visibility in component forms for a cleaner, more focused interface
 
-[uri-form]
+![Modifying URI in the form](uri-form.png)
 
 - **Dynamic Toolbar Width** - Step toolbar automatically adjusts width based on visible buttons for optimal space usage
 
@@ -181,7 +185,7 @@ Configuration forms have been enhanced for better usability:
 
 
 
-New reusable components improve the overall experience:es
+New reusable components improve the overall experience:
 
 - **Resizable Expansion Panels** - Flexible panel system with resize callbacks for customizable workspace layouts
 
@@ -198,6 +202,8 @@ New reusable components improve the overall experience:es
 - **Apache Camel 4.18** - Updated to the latest Camel catalog with new components and features
 
 - **Citrus Framework Support** - Added Citrus catalog integration for testing scenarios
+
+[add video with citrus here]
 
 - **Camel Catalog v0.3.5** - Updated to latest @kaoto/camel-catalog version
 
@@ -227,9 +233,9 @@ Kaoto 2.10 includes support for:
 
 - **Apache Camel 4.18.0** - Latest stable release
 
-- **Camel Quarkus** - Compatible versions
+- **Camel Quarkus** - Compatible versions (3.32.0, 3.27.2)
 
-- **Camel Spring Boot** - Compatible versions
+- **Camel Spring Boot** - Compatible versions (4.18.0, 4.14.5)
 
 
 
